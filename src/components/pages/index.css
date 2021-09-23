@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-red-600: rgb(216, 11, 11);
+  --color-black-600: rgb(7, 0, 0);
+  --color-white-600: rgb(235, 235, 235);
+}
+
+a {
+  text-decoration: none;
+}
+/* text */
+
+.text-white {
+  color: var(--color-white-600);
+}
+
+.text-black {
+  color: var(--color-black-600);
+}
+
+/* end text */
+
+.bg-primary {
+  background: var(--color-red-600);
+}
+
+.bg-secundary {
+  background: var(--color-black-600);
+}
+
+
+.container {
+  background: url("../../assets/img/abstract-timekeeper.svg") no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  padding: 3% 10%;
+  background-attachment: fixed;
+}
+
+.title-page {
+  text-align: center;
+  color: var(--color-black-600);
+  font-size: 20px;
+  font-weight: 800;
+  padding: 20px 0;
+  background-color: var(--color-white-600);
+  box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.information-game {
+  background-color: var(--color-white-600);
+  width: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 12%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.paginate-question {
+  text-align: center;
+  color: var(--color-white-600);
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 5% 0;
+}
+
+.subcontainer {
+  height: 70%;
+  padding-top: 5%;
+}
+
+/* cards */
+.card {
+  font-family: "Nunito Sans", sans-serif;
+  padding: 10px 5%;
+  height: 70%;
+  background: #ffff;
+  width: 50%;
+  margin: auto;
+  border-radius: 15px;
+  justify-content: center;
+}
+.card-question {
+  height: 85%;
+}
+.buttons-results {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 5%;
+}
+.result-container {
+  margin-top: 20px;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 20px;
+}
+.card-result-question {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.card-category-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.card-question-content {
+  height: 70%;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+/* end cards */
+
+/* button */
+
+.buttons {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  column-gap: 10px;
+}
+.btn-link {
+  text-align: center;
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button-start {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+/* button */
+
+/* select */
+.container-select {
+    width: 50%;
+    margin: 0 auto;
+}
+select {
+    background: var(--color-white-600);
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20%;
+ }
+
+/* select */
+
+/* background */
+.height-100 {
+    height: 100%;
+}
+@media (max-width: 800px) {
+  .card {
+    height: 50%;
+    width: 90%;
+    padding: 7px;
+  }
+  .subcontainer {
+    height: 100%;
+    padding-top: 35%;
+  }
+  .information-game {
+    background-color: var(--color-white-600);
+    width: 80%;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .button-start {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20%;
+  }
+  .result-container {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
