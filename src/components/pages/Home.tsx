@@ -2,9 +2,6 @@ import React, { ChangeEvent, FC, useContext, useEffect, useState } from 'react';
 import GameContext from '../../context/GameContext';
 import { levels } from '../../services/levels';
 import ButtonLink from '../atoms/Buttons/ButtonLink';
-import './index.css';
-
-
 
 
 const Home: FC = () => {
@@ -40,10 +37,10 @@ const Home: FC = () => {
                 Can you score 100%?
             </div>
             <div className="container-select">
-                <select onChange={onChange} name="" id="">
+                <select onChange={onChange} >
                     {
-                        levels.map(item => (
-                            <option value={item.value}>{item.name} </option>
+                        levels.map((item, index) => (
+                            <option key={index} value={item.value}>{item.name} </option>
                         ))
                     }
                 </select>
